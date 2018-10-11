@@ -1,4 +1,4 @@
-1) Setting Up the Environment after cloning the app #
+1) Setting Up the Environment after cloning the app 
 1.1) npm install -g react-native-cli
 1.2) npm install -g yarn
 1.3) yarn add react-navigation
