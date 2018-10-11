@@ -20,7 +20,7 @@
 
 3.1) Connect you phone with your computer and make sure USB debugging is On
 
-3.2) adb devices
+3.2) enter command: adb devices
 
 3.3) copy device id
 
