@@ -1,21 +1,36 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import {AppRegistry, Text, View, ScrollView} from 'react-native';
+import {createStackNavigator} from 'react-navigation';
+import Component1 from './app/components/Component1/Component1';
+import StyleComponent from "./app/components/StyleComponent/StyleComponent";
+import TextComponent from "./app/components/TextComponent/TextComponent";
+import ListComponent from "./app/components/ListComponent/ListComponent";
+import ListFetchComponent from "./app/components/ListFetchComponent/ListFetchComponent";
+import NavigationComponent from "./app/components/NavigationComponent/NavigationComponent";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+const Navigation = createStackNavigator({
+    Home:{
+        screen:Component1,
+    },
+    Textt:{
+        screen:TextComponent,
+    },
+    Listt:{
+        screen:ListComponent,
+    },
+    ListFetch:{
+        screen:ListFetchComponent,
+    },
+    Navigationn:{
+        screen:NavigationComponent,
+    },
+    Stylee:{
+        screen:StyleComponent,
+    },
+})
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default Navigation;
+
+
+
+/**/
